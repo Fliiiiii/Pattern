@@ -15,7 +15,6 @@ srv
 .idea/
 .idea/workspace.xml
 database
-reforce.pattern
 #Docker/
 #Jenkinsfile
 # Dependency directories (remove the comment below to include it)
