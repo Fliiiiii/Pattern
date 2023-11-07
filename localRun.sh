@@ -1,0 +1,1 @@
+go build -o reforce.pattern cmd/reforce.pattern/main.go && echo "build done" && ./reforce.pattern

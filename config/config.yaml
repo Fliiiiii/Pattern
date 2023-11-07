@@ -1,0 +1,34 @@
+AppVersion: 1.0.0
+
+server:
+  port: :5555
+  development: false
+
+logger:
+  disable_caller: false
+  disable_stacktrace: false
+  encoding: json
+  level: debug
+
+mongo_db:
+  user: "admin"
+  password: "sfab9R"
+  db: "ReforceBFF"
+  hosts: ["172.24.18.102:27018","172.24.18.102:27019","172.24.18.102:27020"]
+  replica: "rs"
+  app: "reforce.pattern"
+  pool_limits:
+    min: 20
+    max: 300
+
+reforce_id:
+  url: "https://razrab.6fa12b864c11.ru/reforceid"
+  decode_key: !!byte [71, 115, 100, 50, 102, 103, 68, 70, 112, 51, 120, 49, 51, 57, 70, 115]
+  service_id: "64b111ae2307f0085dd84970"
+
+cache:
+  cleanup_time: 60
+
+cookies:
+  domain: ".razrab.6fa12b864c11.ru"
+  max_age: 86400
